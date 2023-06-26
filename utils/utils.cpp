@@ -1,4 +1,14 @@
 #include "utils.h"
+#include <ostream>
+
+
+
+std::ostream& operator<<(std::ostream& os, Pet& pet){
+    os << pet.name << " energy: " << pet.energy <<
+    " happiness: " << pet.happiness << " fullness " << pet.fullness;
+    return os;
+}
+
 
 
 
