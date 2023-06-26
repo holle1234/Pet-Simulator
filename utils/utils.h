@@ -1,5 +1,7 @@
-#include <string>
+#if !defined(UTILS)
+#define UTILS
 
+#include <string>
 
 
 struct Pet{
@@ -36,3 +38,6 @@ void feed_pet(Pet &pet, Treat &treat);
 void play_pet(Pet &pet, Play &play);
 
 void sleep_pet(Pet &pet, Sleep &sleep);
+
+
+#endif // UTILS
