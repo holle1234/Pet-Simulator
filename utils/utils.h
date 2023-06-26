@@ -7,11 +7,25 @@ struct Pet{
     std::string type;
     int fullness {0};
     int happiness {0};
+    int energy {10};
 };
 
 
 struct Treat{
     int nutrition_level {1};
+    int happiness {1};
 };
 
+
+struct Play{
+    std::string type;
+    int energy {1};
+    int happiness {1};
+};
+
+
+
+
 void feed_pet(Pet &pet, Treat &treat);
+
+void play_pet(Pet &pet, Play &play);
