@@ -23,9 +23,16 @@ struct Play{
     int happiness {1};
 };
 
+struct Sleep{
+    std::string type; // bad good etc..
+    int energy {1};
+};
+
 
 
 
 void feed_pet(Pet &pet, Treat &treat);
 
 void play_pet(Pet &pet, Play &play);
+
+void sleep_pet(Pet &pet, Sleep &sleep);
