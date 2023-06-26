@@ -12,6 +12,7 @@ struct Pet{
 
 
 struct Treat{
+    std::string type;
     int nutrition_level {1};
     int happiness {1};
 };
@@ -28,8 +29,7 @@ struct Sleep{
     int energy {1};
 };
 
-
-
+std::ostream &operator<<(std::ostream &os, Pet &pet);
 
 void feed_pet(Pet &pet, Treat &treat);
 

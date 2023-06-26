@@ -5,10 +5,10 @@
 int main(int argc, char const *argv[])
 {
     Pet pet {"pepe", "dog", 50};
-    Play treat {"ham", 1, 2};
-    std::cout << pet.energy << " " << pet.happiness << "\n";
-    play_pet(pet, treat);
-    std::cout << pet.energy << " " << pet.happiness;
+    Play play {"run", 1, 2};
+    Treat treat {"ham", 1, 2};
+    std::cout << pet;
+
 
     return 0;
 }
