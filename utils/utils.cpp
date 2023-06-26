@@ -4,13 +4,10 @@
 
 
 std::ostream& operator<<(std::ostream& os, Pet& pet){
-    os << pet.name << " energy: " << pet.energy <<
+    os << pet.type << " " << pet.name << " energy: " << pet.energy <<
     " happiness: " << pet.happiness << " fullness " << pet.fullness;
     return os;
 }
-
-
-
 
 void feed_pet(Pet& pet, Treat& treat){
     // decrease hunger
