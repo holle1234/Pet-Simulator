@@ -10,9 +10,8 @@ std::ostream& operator<<(std::ostream& os, Pet& pet){
 }
 
 void feed_pet(Pet& pet, Treat& treat){
-    // decrease hunger
-    int new_hunger = pet.fullness - treat.nutrition_level;
-    pet.fullness = new_hunger < 0 ? 0 : new_hunger;
+    // increase fullness
+    pet.fullness += treat.nutrition_level;
 
     // increase happiness
     pet.happiness += treat.happiness;
