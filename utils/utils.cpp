@@ -19,3 +19,8 @@ void play_pet(Pet& pet, Play& play){
     // increase happiness
     pet.happiness += play.happiness;
 }
+
+void sleep_pet(Pet& pet, Sleep& sleep){
+    // increase energy
+    pet.energy += sleep.energy;
+}
